@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="transparent">#00000000</drawable>
+	<drawable name="menu_list_child_bg">#E6E6E6</drawable>
+	<drawable name="title_bg_press">#2d3a47</drawable>
+</resources>

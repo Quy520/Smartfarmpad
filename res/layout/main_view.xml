@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/istest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="@string/is_test"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvlog"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:ellipsize="start"
+        android:ems="17"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tvlog"
+        android:baselineAligned="false" >
+
+        <include
+            android:id="@+id/main_window1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view" />
+
+        <View
+            android:id="@+id/main_window1_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline" />
+
+        <include
+            android:id="@+id/main_window2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view" />
+
+        <View
+            android:id="@+id/main_window2_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline" />
+
+        <include
+            android:id="@+id/main_window3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view" />
+
+        <View
+            android:id="@+id/main_window3_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline" />
+
+        <include
+            android:id="@+id/main_window4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view" />
+
+        <View
+            android:id="@+id/main_window4_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline" />
+
+        <include
+            android:id="@+id/main_window5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/main_window5_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/main_window6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/main_window6_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/main_window7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/main_window7_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/main_window8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/main_window8_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/main_window9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/window_view"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/main_window9_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline"
+            android:visibility="gone" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/right_control_view" />
+    </LinearLayout>
+    
+     
+
+    <TextView
+        android:id="@+id/textViewWin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="542dp"
+        android:layout_marginTop="52dp"
+        android:text=""
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewWin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewWin1"
+        android:layout_marginLeft="542dp"
+        android:layout_marginTop="101dp"
+        android:text=""
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewWin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewWin2"
+        android:layout_marginLeft="542dp"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textSize="20sp"
+        android:visibility="gone" />
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keep class members class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keep class * extends android.support.v4.app.*
+-keep class * extends android.app.Fragment  
+-keep class * extends android.app.Activity
+-keep class * extends android.app.Application
+-keep class * extends android.app.Service
+-keep class * extends android.content.BroadcastReceiver
+-keep class * extends android.content.ContentProvider
+-keep class * extends android.app.backup.BackupAgentHelper
+-keep class * extends android.preference.Preference
+-keep class * extends android.support.v4.**
+-keep class com.android.vending.licensing.ILicensingService
+-keep class com.smartfarm.driver.SerialPort
+-keep class com.smartfarm.bean.*
+-keep class com.smartfarm.db.*
+-keep class com.smartfarm.net.ApiResponse
+-keep class com.smartfarm.net.BaseAsyncHttpResHandler
+
+-libraryjars /libs/android-support-v4.jar
+-libraryjars /libs/umeng-update-v2.6.0.1.jar
+-libraryjars /libs/GetuiExt-2.0.3.jar
+-libraryjars /libs/GetuiSDK2.8.1.0.jar
+-libraryjars /libs/fastjson-1.2.5.jar
+-libraryjars /libs/android-async-http-1.4.8.jar
+-libraryjars /libs/BaiduLBS_Android.jar
+-libraryjars /libs/xstream-1.4.7.jar
+-libraryjars /libs/ormlite-android-4.48.jar
+-libraryjars /libs/ormlite-core-4.48.jar
+-libraryjars /libs/hyphenatechat_3.1.0.jar
+-libraryjars /libs/bugly_crash_release__2.1.jar
+
+--keepclassmembers class com.smartfarm.view.LoginFragment$* {
+    *;
+}
+-keepattributes *Annotation*
+
+-keep class com.loopj.**{*;}
+-keep class com.j256.ormlite.**{*;}
+ 
+-dontwarn com.igexin.**
+-keep class com.igexin.**{*;}
+
+-dontwarn com.baidu.**
+-keep class com.baidu.** { *; }
+-keep class vi.com.gdi.bgl.android.**{*;} 
+-keep class android.support.v4.** {*; }
+-keep class com.tencent.connect.** {*;}
+
+-keep public class javax.**
+-keep public class android.webkit.**
+
+-keep public class com.smartfarm.view.R$*{
+	public static final int *;
+}
+-keep public class * extends com.umeng.**
+-keep class com.umeng.** { *; }
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.**{*;}
+
+-dontwarn com.thoughtworks.xstream.**
+-keep class com.thoughtworks.xstream.**{*;}
+
+-keep public class com.tencent.bugly.**{*;}
+
+#################### region for easemob
+-keep class com.hyphenate.** {*;}
+-dontwarn  com.hyphenate.**
+#################### end region

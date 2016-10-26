@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="horizontal">
+    
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="10dp">
+	    
+        <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginLeft="10dp">
+		    
+	        <Button 
+	            android:id="@+id/btn_start"
+	            android:layout_width="70dp"
+	            android:layout_height="40dp"
+	            android:textSize="15sp"
+	            android:text="开始"/>
+	        
+	        <Button 
+	            android:id="@+id/btn_stop"
+	            android:layout_width="70dp"
+	            android:layout_height="40dp"
+	            android:textSize="15sp"
+	            android:layout_marginLeft="20dp"
+	            android:text="停止"/>
+	    </LinearLayout>
+	    
+        <com.smartfarm.view.InnerScrollView 
+            android:id="@+id/inner"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+	        android:background="@drawable/border"
+	        android:paddingTop="5dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:paddingBottom="15dp">
+            
+            <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/log"
+	            android:textSize="14sp"
+	            android:text="暂未开始运行..."/>
+        </com.smartfarm.view.InnerScrollView>
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="10dp">
+	    
+	    <TextView
+	        android:text="参数配置"
+	        android:textSize="18sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"/>
+	    
+	    <EditText 
+	        android:id="@+id/open"
+	        android:hint="电机放时间/s,默认60"
+	        android:textSize="16sp"
+	        android:inputType="number"
+	        android:layout_marginTop="20dp"
+	   	 	android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <EditText 
+	        android:id="@+id/open_stop"
+	        android:hint="电机放后停时间/s,默认60"
+	        android:textSize="16sp"
+	        android:inputType="number"
+	        android:layout_marginTop="20dp"
+	    	android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <EditText 
+	        android:id="@+id/close"
+	        android:hint="电机关时间/s,默认60"
+	        android:textSize="16sp"
+	        android:inputType="number"
+	        android:layout_marginTop="20dp"
+	    	android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <EditText 
+	        android:id="@+id/close_stop"
+	        android:hint="电机关后停时间/s,默认60"
+	        android:textSize="16sp"
+	        android:inputType="number"
+	        android:layout_marginTop="20dp"
+	    	android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <EditText 
+	        android:id="@+id/test_sleep_count"
+	        android:hint="休息时运转次数,默认无"
+	        android:textSize="16sp"
+	        android:inputType="number"
+	        android:layout_marginTop="20dp"
+	    	android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <EditText 
+	        android:id="@+id/test_count"
+	        android:hint="测试次数,默认100"
+	        android:textSize="16sp"
+	        android:inputType="number"
+	        android:layout_marginTop="20dp"
+	    	android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <EditText 
+	        android:id="@+id/sleep_time"
+	        android:hint="测试休息时间/s,默认120"
+	        android:textSize="16sp"
+	        android:inputType="number"
+	        android:layout_marginTop="20dp"
+	    	android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <EditText 
+	        android:id="@+id/motor_count"
+	        android:hint="测试电机数量,默认1"
+	        android:textSize="16sp"
+	        android:inputType="number"
+	        android:layout_marginTop="20dp"
+	    	android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>

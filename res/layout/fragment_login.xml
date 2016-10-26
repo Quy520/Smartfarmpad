@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+		android:layout_marginTop="20dp">
+
+        <LinearLayout style="@style/item_input_container" >
+
+            <AutoCompleteTextView
+                android:id="@+id/login_user_name"
+                style="@style/item_input_edittext"
+                android:hint="手机号"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/login_name_clear"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+        
+
+        <LinearLayout
+            style="@style/item_input_container"
+            android:layout_marginTop="16dp" >
+
+            <EditText
+                android:id="@+id/login_user_pwd"
+                style="@style/item_input_edittext"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/login_pwd_clear"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/button_common_blue"
+            android:layout_marginTop="30dp"
+            android:text="登录" />
+
+        <TextView
+            android:id="@+id/login_to_resign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="还没有帐号？那就去注册吧"
+            android:textColor="@color/lightblue"
+            android:gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:id="@+id/login_to_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:textColor="@color/lightblue"
+            android:gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"/>
+        
+    </LinearLayout>
+
+</ScrollView>

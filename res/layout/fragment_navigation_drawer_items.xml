@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/menu_item_index"
+        style="@style/navi_item_text"
+        android:text="@string/navi_item_index"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/menu_item_login"
+        style="@style/navi_item_text"
+        android:text="@string/navi_item_login" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_light"
+        style="@style/navi_item_text"
+        android:text="@string/navi_item_light"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/menu_item_temp"
+        style="@style/navi_item_text"
+        android:text="@string/navi_item_temp" />
+
+    <View
+        android:id="@+id/menu_light_dividing"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_water"
+        style="@style/navi_item_text"
+        android:text="@string/navi_item_water"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/menu_water_dividing"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/menu_item_net"
+        style="@style/navi_item_text"
+        android:text="@string/net_diagnosis" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_protocol"
+        style="@style/navi_item_text"
+        android:text="@string/user_protocol" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_version"
+        style="@style/navi_item_text"
+        android:text="@string/version_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_exit"
+        style="@style/navi_item_text"
+        android:text="@string/exit_pro" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_setting_num"
+        style="@style/navi_item_text"
+        android:text="@string/setting_num"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/menu_setting_dividing"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/menu_item_setting_multi_num"
+        style="@style/navi_item_text"
+        android:text="@string/setting_multi_num"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/menu_setting_multi_dividing"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/menu_item_test"
+        style="@style/navi_item_text"
+        android:visibility="gone"
+        android:text="@string/setting_test" />
+
+    <View
+        android:id="@+id/menu_setting_item_test"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="#d2d2d2" />
+    
+
+</LinearLayout>

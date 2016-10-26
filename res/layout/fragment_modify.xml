@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_8"
+		android:layout_marginTop="20dp">
+
+        <LinearLayout style="@style/item_input_container" >
+
+            <AutoCompleteTextView
+                android:id="@+id/login_user_name"
+                style="@style/item_input_edittext"
+                android:hint="请输入手机号码"
+                android:imeOptions="actionNext"
+				android:inputType="number"/>
+
+            <ImageView
+                android:id="@+id/login_name_clear"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_input_container"
+            android:layout_marginTop="@dimen/space_16" >
+
+            <EditText
+                android:id="@+id/login_user_old_pwd"
+                style="@style/item_input_edittext"
+                android:hint="请输入旧密码"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/login_old_pwd_clear"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+        <LinearLayout
+            style="@style/item_input_container"
+            android:layout_marginTop="@dimen/space_16" >
+
+            <EditText
+                android:id="@+id/login_user_pwd"
+                style="@style/item_input_edittext"
+                android:hint="请输入新密码"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/login_new_pwd_clear"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_input_container"
+            android:layout_marginTop="@dimen/space_16" >
+
+            <EditText
+                android:id="@+id/login_user_pwd_again"
+                style="@style/item_input_edittext"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/login_pwd_clear_again"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/button_common_blue"
+            android:layout_marginTop="30dp"
+            android:text="修改" />
+        
+    </LinearLayout>
+
+</ScrollView>

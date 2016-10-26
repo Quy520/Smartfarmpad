@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" ><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="@dimen/space_8" >
+
+        <LinearLayout style="@style/item_input_container" >
+
+            <AutoCompleteTextView
+                android:id="@+id/login_user_name"
+                style="@style/item_input_edittext"
+                android:hint="请输入手机号码"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/login_name_clear"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_input_container"
+            android:layout_marginTop="@dimen/space_16" >
+
+            <EditText
+                android:id="@+id/login_user_pwd"
+                style="@style/item_input_edittext"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/login_pwd_clear"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_input_container"
+            android:layout_marginTop="@dimen/space_16" >
+
+            <EditText
+                android:id="@+id/login_user_pwd_again"
+                style="@style/item_input_edittext"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/login_pwd_clear_again"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_input_container"
+            android:layout_marginTop="@dimen/space_16" >
+
+            <EditText
+                android:id="@+id/register_note_check"
+                style="@style/item_input_edittext"
+                android:hint="请输入验证码"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/register_send_note"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="获取短信验证码"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/voice_code"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/blue"
+            android:text="短信验证码收不到嘛？可以试试语音验证码"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/login_btn" 
+            style="@style/button_common_blue"
+            android:layout_marginTop="15dp"
+            android:text="注册" />
+    </LinearLayout>
+
+</ScrollView>

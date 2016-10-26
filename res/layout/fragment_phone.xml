@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout style="@style/item_input_container" >
+
+            <AutoCompleteTextView
+                android:id="@+id/phone_number"
+                style="@style/item_input_edittext"
+                android:hint="请输入手机号码"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/login_name_clear"
+                style="@style/item_input_clear"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/next_btn"
+            style="@style/button_common_blue"
+            android:layout_marginTop="30dp"
+            android:text="下一步" />
+        
+        <TextView
+            android:id="@+id/switch_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="切换到密码登陆"
+            android:textColor="@color/lightblue"
+            android:gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+</ScrollView>

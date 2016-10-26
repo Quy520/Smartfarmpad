@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/light_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/ill_icon"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="@string/illuminance_value"
+            android:textColor="#ead700"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/light_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/light_value"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/light_value"
+            android:drawableLeft="@drawable/ill_time"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="#ead700"
+            android:visibility="gone"
+            android:textSize="36sp" />
+        <TextView
+            android:id="@+id/light_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/light_value"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/light_value"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="#ead700"
+            android:textSize="36sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/light1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/light_item" />
+
+        <View
+            android:id="@+id/light1_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline" />
+
+        <include
+            android:id="@+id/light2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/light_item" />
+
+        <View
+            android:id="@+id/light2_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline" />
+
+        <include
+            android:id="@+id/light3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/light_item" />
+
+        <View
+            android:id="@+id/light3_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline" />
+
+        <include
+            android:id="@+id/light4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/light_item" />
+
+        <View
+            android:id="@+id/light4_dividing"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_vline" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/right_control_view" />
+    </LinearLayout>
+
+</LinearLayout>

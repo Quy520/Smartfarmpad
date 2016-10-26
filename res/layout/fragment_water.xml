@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tab_value_temp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="土壤湿度："
+                android:textColor="@color/blue"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/water_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/water_icon"
+                android:drawablePadding="10dp"
+                android:textColor="@color/blue"
+                android:layout_marginRight="30dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="土壤温度："
+                android:textColor="@color/orange"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/water_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/water_temp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/orange"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/water_rump"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                layout="@layout/water_rump_item" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_vline" />
+
+            <include
+                android:id="@+id/water_yao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/water_rump_item"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/water1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                layout="@layout/water_item" />
+
+            <View
+                android:id="@+id/water1_dividing"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_vline" />
+
+            <include
+                android:id="@+id/water2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                layout="@layout/water_item" />
+
+            <View
+                android:id="@+id/water2_dividing"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_vline" />
+
+            <include
+                android:id="@+id/water3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                layout="@layout/water_item" />
+
+            <View
+                android:id="@+id/water3_dividing"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_vline" />
+
+            <include
+                android:id="@+id/water4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                layout="@layout/water_item" />
+
+            <View
+                android:id="@+id/water4_dividing"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_vline" />
+
+            <include
+                android:id="@+id/water5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                layout="@layout/water_item" />
+
+            <View
+                android:id="@+id/water5_dividing"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_vline" />
+
+            <include
+                android:id="@+id/water6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                layout="@layout/water_item" />
+
+            <View
+                android:id="@+id/water6_dividing"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_vline"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/right_control_view" />
+
+</LinearLayout>

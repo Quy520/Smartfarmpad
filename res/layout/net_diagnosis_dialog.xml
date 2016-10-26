@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/diagnosis_ing">
+	    
+	    <ProgressBar 
+	        style="@style/loading_small"
+			android:id="@+id/diagnosis_progress"
+			android:layout_width="32dp"
+			android:layout_height="32dp" 
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="10dp"/>
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:textSize="18sp"
+	        android:text="@string/diagnosis_show_text"
+	        android:gravity="center_vertical"
+	        android:layout_margin="5dp"/>
+	</LinearLayout>
+	    
+    <TextView 
+        android:id="@+id/diagnosis_curr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:layout_marginBottom="10dp"
+	    android:gravity="center"
+	    android:id="@+id/diagnosis_process_text"/>
+</LinearLayout>

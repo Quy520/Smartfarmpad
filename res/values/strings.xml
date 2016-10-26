@@ -1,0 +1,171 @@
+<resources>
+
+    <string name="app_name">智能大棚温控系统</string>
+    
+    <string name="update_log_title">更新日志</string>
+    <string name="update_log">
+		  1.夜间模式下不再推送温度。\n
+		2.拓展短信控制命令。\n
+		3.风口数目变更为2-8路。\n
+		4.风口状态变为显示拉动距离，点击运转时间改为拉动最长距离和首档拉动距离。\n
+		5.添加报警温度，推送温度时间的设定并实现先关功能。\n</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_pl2303_hxdsimple_test">智能大棚温控系统</string>
+    <string name="PL2303HXD_Set_BaudRate">BaudRate</string>
+    <string name="PL2303HXD_OpenCOMPort">Open</string>
+    <string name="PL2303HXD_WriteData">Write</string>
+    <string name="PL2303HXD_ReadData">ReadData</string>
+    <string name="PL2303HXD_StartThread">Start</string>
+    <string name="PL2303HXD_StopThread">Stop</string>
+    <string name="PL2303HXD_LoopBack">LoopBack</string>
+    <string name="PL2303HXD_SetVIDPID">Connecting New VID PID</string>
+    <string name="setting_title">智能大棚参数设定</string>
+    <string name="save">保存</string>
+    
+    <string name="button_openWindows">OpenWindows</string>
+    <string name="button_closeWindows">CloseWindows</string>
+    <string name="button_stopAuto">Stop</string>
+    <string name="service_started">Service Started</string>
+    <string name="selection">自动</string>
+    <string name="selectionN">手动</string>
+    <string name="none"></string>
+    
+    <string name="is_test">测试版本</string>
+    <string name="trmp_default">-</string>
+    <string name="control_way">控制方式</string>
+    <string name="control_open_enable">高温切自动</string>
+    <string name="control_one_key">一键灌溉</string>
+    <string name="receive_msg">收到消息:%1$s</string>
+    <string name="max_temp">高温报警:%1$s</string>
+    <string name="min_temp">低温报警:%1$s</string>
+    <string name="air_moisture">空气湿度:%1$s</string>
+    <string name="setting">智能放风机参数设定</string>
+    <string name="selected_write">可以选择填写的项目</string>
+    <string name="must_write">必须填写的项目</string>
+    <string name="main_phone_mun">主手机号码</string>
+    <string name="tem_machine_num">温控机号码</string>
+    <string name="phone_mun_two">从1手机号码</string>
+    <string name="phone_mun_three">从2手机号码</string>
+    <string name="tem_machine_match_num">手机匹配号</string>
+    <string name="water_enable">水肥一体化功能</string>
+    <string name="light_enable">照度管理功能</string>
+    <string name="auto_open_enable">高温模式自动切换功能</string>
+    <string name="auto_open_descr">当开启此功能时，温度超过高温报警温度后，将在原有报警提示的基础上，自动将模式切换到自动模式进行温度调节，保护作物正常生长。不开启则不会自动切换到自动模式。</string>
+    <string name="temp_more_mode">风口温度单独管理功能</string>
+    <string name="alarm_temp_max">温度报警最高温度(单位:℃)</string>
+    <string name="alarm_temp_min">温度报警最低温度(单位:℃)</string>
+    <string name="alarm_msg_state">是否关闭短信报警</string>
+    <string name="alarm_msg_state_descr">此功能开启后手机将不会收到短信报警</string>
+    <string name="difference_upper_limit">适宜温度上限(单位:℃)</string>
+    <string name="highest_tem">适宜温度下限(单位:℃)</string>
+    <string name="lowest_tem">开风温度(单位:℃)</string>
+    <string name="difference_lower_limit">关风温度(单位:℃)</string>
+    <string name="open_len">风口打开至最大的链条长度(单位:厘米)</string>
+    <string name="open_len_first">风口打开第一档的链条长度(单位:厘米)</string>
+    <string name="open_enable">是否启用</string>
+    <string name="ventilation_time">通风时间长度(单位:分钟)</string>
+    <string name="open_window_time">夜间模式开始时间</string>
+    <string name="close_window_time">夜间模式结束时间</string>
+    <string name="select_auto">选择手动或自动</string>
+    <string name="mode_auto">自动模式</string>
+    <string name="mode_manually">手动模式</string>
+    <string name="check_version">查看新版本</string>
+    <string name="please_select_time">请选择时间</string>
+    <string name="cancle">取消</string>
+    <string name="confirm">确定</string>
+    <string name="set_time_title">设置时间信息</string>
+    <string name="net_connect">网络已连接</string>
+    <string name="net_disconnect">网络已断开</string>
+    <string name="tem_match_num">本机匹配号</string>
+    <string name="query_version">版本信息</string>
+    <string name="curr_version">当前版本：%s</string>
+    <string name="clear_state">清除所有风口状态</string>
+    <string name="link_bluetooth">连接蓝牙</string>
+    <string name="link_state">未连接</string>
+    <string name="is_link">已连接</string>
+    <string name="select_window_count">选择窗口数量</string>
+    <string name="select_minutes_count">选择报警时间间隔</string>
+    <string name="select_window_id">选择窗口编号</string>
+    <string name="select_water_count">选择电磁阀数量</string>
+    <string name="net_diagnosis">网络诊断</string>
+    <string name="net_diagnosis_descr">当网络异常时能诊断异常原因</string>
+    <string name="btn_diagnosis">诊断</string>
+    <string name="diagnosis_show_text">正在为您诊断网络故障..</string>
+    <string name="ven_mode_show">放风中(停止放风)</string>
+    <string name="user_protocol">用户协议</string>
+    <string name="stalls_manager">档位管理</string>
+    <string name="version_info">关于软件</string>
+    <string name="user_login">用户登录</string>
+    <string name="user_phone_login">手机号码登陆</string>
+    <string name="user_new_login">用户登陆</string>
+    <string name="user_register">用户注册</string>
+    <string name="user_modify">修改密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="user_info">个人信息</string>
+    <string name="exit_pro">退出程序</string>
+    <string name="setting_num">设置单台温控机编号</string>
+    <string name="setting_multi_num">设置多台温控机编号</string>
+    <string name="setting_test">生产专用版本</string>
+    <string name="temp_config">温度参数配置</string>
+    <string name="pad_pwd">温控机密码</string>
+    <string name="update_res">已经是最新版本!</string>
+    <string name="is_debug_mode">测试模式</string>
+    <string name="edit_pwd">请输入密码</string>
+    <string name="calibrate_state">校准风口状态</string>
+    <string name="calibrate_state_descr">校准风口状态用于重置目前的风口状态，若发现目前风口状态描述与实际有差距可使用此功能来校准风口状态。</string>
+    <string name="operation_sure">确认</string>
+    <string name="calibrate_state_tip">确认要校准窗口状态吗？校准窗口状态时将会将所有风口关死，请不要中断这个过程，否则将导致校准失败。</string>
+    <string name="push_time">温度推送时间(单位：分钟)</string>
+    <string name="temp_info_title">电机运转档位设置</string>
+    <string name="temp_info_tip">注意：当两个档位的温度值设置相同时，自动控制将会使用较低的档位用于控制，放风档位温度和关风档位温度相同则使用关风档位。例如开风第三档和开风第四档的温度都是24℃，那么自动控制在24℃的时候将会使用开风第三档用于控制</string>
+    
+    <string name="open_first">电机运转第一档长度(单位:厘米)</string>
+    <string name="open_second">电机运转第二档长度(单位:厘米)</string>
+    <string name="open_third">电机运转第三档长度(单位:厘米)</string>
+    <string name="open_fourth">电机运转第四档长度(单位:厘米)</string>
+    <string name="open_fifth">电机运转剩余档位长度(单位:厘米)</string>
+	<string name="copyright">Copyright © 上海洲涛智能 All rights reserved.</string>
+	<string name="shztsite">官网</string>
+	<string name="knowmore">了解更多</string>
+    
+    <string name="navi_item_index">信息概览</string>
+    <string name="navi_item_temp">温度管理</string>
+    <string name="navi_item_login">用户登录</string>
+    <string name="navi_item_water">水肥一体化</string>
+    <string name="navi_item_light">照度管理</string>
+    
+    <string name="submit">提交</string>
+    <string name="illuminance_vaild_time">有效照度时间:%1$s</string>
+    <string name="illuminance_value">照度:%1$dLx</string>
+    <string name="illuminance_max">照度上限:%1$dLx</string>
+    <string name="illuminance_min">最小照度:%1$dLx</string>
+    <string name="illuminance_co2">二氧化碳浓度:%1$s</string>
+    
+    <string name="illuminance_title">照度管理设置</string>
+    <string name="illuminance_time">每天需要有效光照时间(单位：分钟)</string>
+    <string name="illuminance_vaild">最小有效照度(单位：Lx)</string>
+    <string name="illuminance_start">补光开始时间</string>
+    <string name="illuminance_up">照度上限(单位：Lx)</string>
+    <string name="illuminance_diy">自定义补光时间长度(单位：分钟)</string>
+    <string name="illuminance_count">选择补光灯数量</string>
+    <string name="illuminance_start_diy">开始自定义补光</string>
+    <string name="illuminance_end_diy">结束自定义补光</string>
+    <string name="rump">加压泵</string>
+    <string name="yao">药泵</string>
+    
+    <string name="water_title">水肥一体管理设置</string>
+    <string name="water_time">滴灌时间(单位：分钟)</string>
+    <string name="water_value">湿度阈值(单位：%RH)</string>
+    <string name="water_value_max">湿度报警最大值(单位：%RH)</string>
+    <string name="water_value_min">湿度报警最小值(单位：%RH)</string>
+    
+    <string name="info_name">昵称</string>
+    <string name="info_sex">性别</string>
+    <string name="info_phone">手机号码</string>
+    <string name="info_addr">地址</string>
+    <string name="info_pwd">密码管理</string>
+    <string name="info_exit">退出登录</string>
+    <string name="info_face">头像</string>
+</resources>

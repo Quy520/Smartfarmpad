@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BaudRate_Var">
+        <item >9600</item>
+        <item >19200</item>
+        <item >115200</item>
+    </string-array>
+    
+    <string-array name="windowCount">
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+    </string-array>
+    
+    <string-array name="lightCount">
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+    </string-array>
+    
+    <string-array name="waterCount">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+    </string-array>
+    
+   <string-array name="minutesCount">
+        <item >10</item>
+        <item >20</item>
+        <item >30</item>
+        <item >40</item>
+        <item >50</item>
+        <item >60</item>
+    </string-array>
+    
+</resources>

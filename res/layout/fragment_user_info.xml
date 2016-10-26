@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartfarm.view.CustomerScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+		    android:id="@+id/user_info_face"
+		    style="@style/option_item_rl"
+		    android:layout_marginTop="20dp">
+		
+		    <TextView
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_face"
+		        android:textColor="#000000"
+		        android:textSize="16sp" />
+		    
+		    <ImageView
+		        android:id="@+id/user_info_show_face"
+		        android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp"
+		        android:src="@drawable/default_user_face"
+		        android:contentDescription="@string/water_title"/>
+		</RelativeLayout>
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#DADADA" />
+        
+        <RelativeLayout
+		    android:id="@+id/user_info_name"
+		    style="@style/option_item_rl">
+		
+		    <TextView
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_name"
+		        android:textColor="#000000"
+		        android:textSize="16sp" />
+		
+		    <TextView
+		        android:id="@+id/user_info_show_name"
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_name"
+		        android:textColor="@color/grey"
+		        android:textSize="16sp"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp" />
+		</RelativeLayout>
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#DADADA" />
+        
+        <RelativeLayout
+		    android:id="@+id/user_info_phone"
+		    style="@style/option_item_rl">
+		
+		    <TextView
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_phone"
+		        android:textColor="#000000"
+		        android:textSize="16sp" />
+		
+		    <TextView
+		        android:id="@+id/user_info_show_phone"
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_phone"
+		        android:textColor="@color/grey"
+		        android:textSize="16sp"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp" />
+		</RelativeLayout>
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#DADADA" />
+
+        <RelativeLayout
+		    android:id="@+id/user_info_addr"
+		    style="@style/option_item_rl">
+		
+		    <TextView
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_addr"
+		        android:textColor="#000000"
+		        android:textSize="16sp" />
+		
+		    <TextView
+		        android:id="@+id/user_info_show_addr"
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_addr"
+		        android:textColor="@color/grey"
+		        android:textSize="16sp"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp" />
+		</RelativeLayout>
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#DADADA" />
+        
+        <RelativeLayout
+		    android:id="@+id/user_info_sex"
+		    style="@style/option_item_rl">
+		
+		    <TextView
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_sex"
+		        android:textColor="#000000"
+		        android:textSize="16sp" />
+		
+		    <TextView
+		        android:id="@+id/user_info_show_sex"
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_sex"
+		        android:textColor="@color/grey"
+		        android:textSize="16sp"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp" />
+		</RelativeLayout>
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#DADADA" />
+        
+        <RelativeLayout
+		    android:id="@+id/user_info_pwd"
+		    style="@style/option_item_rl">
+		
+		    <TextView
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_pwd"
+		        android:textColor="#000000"
+		        android:textSize="16sp" />
+		</RelativeLayout>
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#DADADA" />
+        
+        <RelativeLayout
+		    android:id="@+id/user_info_exit"
+		    style="@style/option_item_rl">
+		
+		    <TextView
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_exit"
+		        android:textColor="@color/red"
+		        android:textSize="16sp" />
+		</RelativeLayout>
+        <RelativeLayout
+		    android:id="@+id/diaoyong"
+		    style="@style/option_item_rl"
+		    android:visibility="gone">
+		
+		    <TextView
+		        style="@style/option_item_text_parent"
+		        android:text="@string/info_exit"
+		        android:textColor="@color/red"
+		        android:textSize="16sp" />
+		</RelativeLayout>
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#DADADA" />
+        
+    </LinearLayout>
+	
+
+</com.smartfarm.view.CustomerScrollView>
